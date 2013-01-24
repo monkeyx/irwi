@@ -5,7 +5,7 @@ class Irwi::Formatters::RedCloth
   end
 
   def format( text )
-    ::RedCloth.new( text ).to_html
+    ::RedCloth.new( text ).to_html.html_safe
   end
 
 end
